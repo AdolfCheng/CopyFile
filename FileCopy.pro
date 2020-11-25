@@ -35,3 +35,6 @@ HEADERS  += mainwindow.h \
     filecopier.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    image.qrc

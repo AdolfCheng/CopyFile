@@ -35,22 +35,35 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_grpOperation1_clicked(bool checked)
 {
-    ui->grpOperation2->setChecked(!checked);
-    ui->grpOperation3->setChecked(!checked);
+//    if(ui->grpOperation2->isChecked()){
+//        ui->grpOperation2->setChecked(!checked);
+//    }
+//    if(ui->grpOperation3->isChecked()){
+//        ui->grpOperation3->setChecked(!checked);
+//    }
+
 }
 
 void MainWindow::on_grpOperation2_clicked(bool checked)
 {
-    ui->grpOperation1->setChecked(!checked);
-    ui->grpOperation3->setChecked(!checked);
+//    if(ui->grpOperation1->isChecked()){
+//        ui->grpOperation1->setChecked(!checked);
+//    }
+//    if(ui->grpOperation3->isChecked()){
+//        ui->grpOperation3->setChecked(!checked);
+//    }
     connectCopier(m_copier); // 连接信号-槽，复制的开始和取消指令是通过信号发送的
     m_copier2->disconnect(); // 因为使用相同的信号和槽，避免冲突，取消连接
 }
 
 void MainWindow::on_grpOperation3_clicked(bool checked)
 {
-    ui->grpOperation1->setChecked(!checked);
-    ui->grpOperation2->setChecked(!checked);
+//    if(ui->grpOperation1->isChecked()){
+//        ui->grpOperation1->setChecked(!checked);
+//    }
+//    if(ui->grpOperation2->isChecked()){
+//        ui->grpOperation2->setChecked(!checked);
+//    }
     connectCopier(m_copier2); // 连接信号-槽，复制的开始和取消指令是通过信号发送的
     m_copier->disconnect(); // 因为使用相同的信号和槽，避免冲突，取消连接
 }

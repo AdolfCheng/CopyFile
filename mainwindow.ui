@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Qt多线程范例-保存文件副本-星夜之夏</string>
+   <string>Qt多线程范例-保存文件副本</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="grpOperation1">
@@ -215,19 +215,6 @@
       <string>复制</string>
      </property>
     </widget>
-   </widget>
-   <widget class="QLabel" name="lblCopyright">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>350</y>
-      <width>300</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Copyright 星夜之夏</string>
-    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>

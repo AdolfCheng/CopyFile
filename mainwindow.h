@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMutexLocker>
+
 #include "copyfilethread.h"
 #include "filecopier.h"
 

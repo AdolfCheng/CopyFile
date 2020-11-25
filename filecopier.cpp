@@ -45,6 +45,7 @@ void FileCopier::startCopying()
         }
         QThread::msleep(8);
         qint64 wrt = cpy.write(src.readLine());
+        qDebug()<<wrt<<endl;
         if (wrt < 0)
         {
             emit errorOccurred();
@@ -55,6 +56,7 @@ void FileCopier::startCopying()
         }
         bytesWritten += wrt;
         emit percentCopied(bytesWritten*1.0/srcSize);
+        //qDebug()<<bytesWritten<<endl;
     }
     src.close();
     cpy.close();
